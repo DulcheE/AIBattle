@@ -7,10 +7,7 @@
 		{
 			"Name": "AIBattle",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"AIModule"
-			]
+			"LoadingPhase": "Default"
 		}
 	]
 }
