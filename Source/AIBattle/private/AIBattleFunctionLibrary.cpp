@@ -13,7 +13,7 @@ TArray<UObject*> UAIBattleFunctionLibrary::LoadObjectLibrary(const FString& Path
 	if (ObjectLibrary != nullptr)
 	{
  		ObjectLibrary->AddToRoot();
- 		FString NewPath = TEXT("/Game") / Path;
+ 		const FString NewPath = TEXT("/Game") / Path;
  		int32 NumOfAssetDatas = ObjectLibrary->LoadAssetDataFromPath(NewPath);
  		TArray<FAssetData> AssetDatas;
  		ObjectLibrary->GetAssetDataList(AssetDatas);
